@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDocs</title>
+</head>
+<body>
+    <h1>AutoDocs File Upload</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <label for="excel_file">Select Excel File:</label>
+        <input type="file" name="excel_file" accept=".xlsx, .xls" required><br><br>
+
+        <label for="logo_file">Select Logo File:</label>
+        <input type="file" name="logo_file" accept=".png, .jpg, .jpeg" required><br><br>
+
+        <label for="option">Select Option:</label>
+        <select name="option">
+            <option value="Capital Call">Capital Call</option>
+            <option value="K1 Document">K1 Document</option>
+            <option value="Quarterly Update">Quarterly Update</option>
+            <option value="Distribution Notice">Distribution Notice</option>
+            <option value="GP Report">GP Report</option>
+            <option value="Wire Instruction">Wire Instruction</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
